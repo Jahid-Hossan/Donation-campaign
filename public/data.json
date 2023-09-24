@@ -1,124 +1,134 @@
-{
-    "donation_campaigns": [
-        {
-            "img": "https://i.ibb.co/Thr1gh3/Clothing.png",
-            "title": "Warm Clothing Drive",
-            "category": "clothing",
-            "category_bg": "rgba(0, 0, 255, 0.20)",
-            "card_bg": "rgba(128, 128, 255, 0.15)",
-            "text_button_bg": "rgba(128, 128, 255, 1)",
-            "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
-            "price": 40
-        },
-        {
-            "img": "https://i.ibb.co/Fs8Cv2t/Education.png",
-            "title": "Educational Scholarships",
-            "category": "education",
-            "category_bg": "rgba(0, 128, 0, 0.20)",
-            "card_bg": "rgba(128, 255, 128, 0.15)",
-            "text_button_bg": "rgba(128, 255, 128, 1)",
-            "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
-            "price": 75
-        },
-        {
-            "img": "https://i.ibb.co/ZK6zGcS/Food.png",
-            "title": "Food for Families in Need",
-            "category": "food",
-            "category_bg": "rgba(255, 255, 0, 0.20)",
-            "card_bg": "rgba(255, 255, 128, 0.15)",
-            "text_button_bg": "rgba(255, 255, 128, 1)",
-            "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
-            "price": 30
-        },
-        {
-            "img": "https://i.ibb.co/pRNFzHK/Health.png",
-            "title": "Medical Supplies for Children",
-            "category": "health",
-            "category_bg": "rgba(255, 0, 0, 0.20)",
-            "card_bg": "rgba(255, 128, 128, 0.15)",
-            "text_button_bg": "rgba(255, 128, 128, 1)",
-            "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
-            "price": 50
-        },
-        {
-            "img": "https://i.ibb.co/Thr1gh3/Clothing.png",
-            "title": "Warm Clothing Drive",
-            "category": "clothing",
-            "category_bg": "rgba(0, 0, 255, 0.20)",
-            "card_bg": "rgba(128, 128, 255, 0.15)",
-            "text_button_bg": "rgba(128, 128, 255, 1)",
-            "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
-            "price": 40
-        },
-        {
-            "img": "https://i.ibb.co/Fs8Cv2t/Education.png",
-            "title": "Educational Scholarships",
-            "category": "education",
-            "category_bg": "rgba(0, 128, 0, 0.20)",
-            "card_bg": "rgba(128, 255, 128, 0.15)",
-            "text_button_bg": "rgba(128, 255, 128, 1)",
-            "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
-            "price": 75
-        },
-        {
-            "img": "https://i.ibb.co/ZK6zGcS/Food.png",
-            "title": "Food for Families in Need",
-            "category": "food",
-            "category_bg": "rgba(255, 255, 0, 0.20)",
-            "card_bg": "rgba(255, 255, 128, 0.15)",
-            "text_button_bg": "rgba(255, 255, 128, 1)",
-            "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
-            "price": 30
-        },
-        {
-            "img": "https://i.ibb.co/pRNFzHK/Health.png",
-            "title": "Medical Supplies for Children",
-            "category": "health",
-            "category_bg": "rgba(255, 0, 0, 0.20)",
-            "card_bg": "rgba(255, 128, 128, 0.15)",
-            "text_button_bg": "rgba(255, 128, 128, 1)",
-            "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
-            "price": 50
-        },
-        {
-            "img": "https://i.ibb.co/Thr1gh3/Clothing.png",
-            "title": "Warm Clothing Drive",
-            "category": "clothing",
-            "category_bg": "rgba(0, 0, 255, 0.20)",
-            "card_bg": "rgba(128, 128, 255, 0.15)",
-            "text_button_bg": "rgba(128, 128, 255, 1)",
-            "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
-            "price": 40
-        },
-        {
-            "img": "https://i.ibb.co/Fs8Cv2t/Education.png",
-            "title": "Educational Scholarships",
-            "category": "education",
-            "category_bg": "rgba(0, 128, 0, 0.20)",
-            "card_bg": "rgba(128, 255, 128, 0.15)",
-            "text_button_bg": "rgba(128, 255, 128, 1)",
-            "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
-            "price": 75
-        },
-        {
-            "img": "https://i.ibb.co/ZK6zGcS/Food.png",
-            "title": "Food for Families in Need",
-            "category": "food",
-            "category_bg": "rgba(255, 255, 0, 0.20)",
-            "card_bg": "rgba(255, 255, 128, 0.15)",
-            "text_button_bg": "rgba(255, 255, 128, 1)",
-            "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
-            "price": 30
-        },
-        {
-            "img": "https://i.ibb.co/pRNFzHK/Health.png",
-            "title": "Medical Supplies for Children",
-            "category": "health",
-            "category_bg": "rgba(255, 0, 0, 0.20)",
-            "card_bg": "rgba(255, 128, 128, 0.15)",
-            "text_button_bg": "rgba(255, 128, 128, 1)",
-            "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
-            "price": 50
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/Thr1gh3/Clothing.png",
+        "title": "Warmth",
+        "category": "clothing",
+        "category_bg": "rgba(0, 0, 255, 0.20)",
+        "card_bg": "rgba(128, 128, 255, 0.15)",
+        "text_button_bg": "rgba(128, 128, 255, 1)",
+        "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
+        "price": 40
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/Fs8Cv2t/Education.png",
+        "title": "EduAid",
+        "category": "education",
+        "category_bg": "rgba(0, 128, 0, 0.20)",
+        "card_bg": "rgba(128, 255, 128, 0.15)",
+        "text_button_bg": "rgba(128, 255, 128, 1)",
+        "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
+        "price": 75
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/ZK6zGcS/Food.png",
+        "title": "FoodCare",
+        "category": "food",
+        "category_bg": "rgba(255, 255, 0, 0.20)",
+        "card_bg": "rgba(255, 255, 128, 0.15)",
+        "text_button_bg": "rgba(255, 255, 128, 1)",
+        "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
+        "price": 30
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/pRNFzHK/Health.png",
+        "title": "MediKids",
+        "category": "health",
+        "category_bg": "rgba(255, 0, 0, 0.20)",
+        "card_bg": "rgba(255, 128, 128, 0.15)",
+        "text_button_bg": "rgba(255, 128, 128, 1)",
+        "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
+        "price": 50
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/Thr1gh3/Clothing.png",
+        "title": "CozyKids",
+        "category": "clothing",
+        "category_bg": "rgba(0, 0, 255, 0.20)",
+        "card_bg": "rgba(128, 128, 255, 0.15)",
+        "text_button_bg": "rgba(128, 128, 255, 1)",
+        "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
+        "price": 40
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/Fs8Cv2t/Education.png",
+        "title": "DreamFund",
+        "category": "education",
+        "category_bg": "rgba(0, 128, 0, 0.20)",
+        "card_bg": "rgba(128, 255, 128, 0.15)",
+        "text_button_bg": "rgba(128, 255, 128, 1)",
+        "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
+        "price": 75
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/ZK6zGcS/Food.png",
+        "title": "MealAid",
+        "category": "food",
+        "category_bg": "rgba(255, 255, 0, 0.20)",
+        "card_bg": "rgba(255, 255, 128, 0.15)",
+        "text_button_bg": "rgba(255, 255, 128, 1)",
+        "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
+        "price": 30
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/pRNFzHK/Health.png",
+        "title": "HealthAid",
+        "category": "health",
+        "category_bg": "rgba(255, 0, 0, 0.20)",
+        "card_bg": "rgba(255, 128, 128, 0.15)",
+        "text_button_bg": "rgba(255, 128, 128, 1)",
+        "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
+        "price": 50
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/Thr1gh3/Clothing.png",
+        "title": "WinterWear",
+        "category": "clothing",
+        "category_bg": "rgba(0, 0, 255, 0.20)",
+        "card_bg": "rgba(128, 128, 255, 0.15)",
+        "text_button_bg": "rgba(128, 128, 255, 1)",
+        "description": "Help us collect and distribute warm clothing to those in need during the cold winter months.",
+        "price": 40
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/Fs8Cv2t/Education.png",
+        "title": "BrightStart",
+        "category": "education",
+        "category_bg": "rgba(0, 128, 0, 0.20)",
+        "card_bg": "rgba(128, 255, 128, 0.15)",
+        "text_button_bg": "rgba(128, 255, 128, 1)",
+        "description": "Support the dreams of young students by contributing to scholarships that enable them to access quality education.",
+        "price": 75
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/ZK6zGcS/Food.png",
+        "title": "NourishKids",
+        "category": "food",
+        "category_bg": "rgba(255, 255, 0, 0.20)",
+        "card_bg": "rgba(255, 255, 128, 0.15)",
+        "text_button_bg": "rgba(255, 255, 128, 1)",
+        "description": "Join us in providing nutritious meals to families facing hunger and food insecurity in our community.",
+        "price": 30
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/pRNFzHK/Health.png",
+        "title": "ChildCare",
+        "category": "health",
+        "category_bg": "rgba(255, 0, 0, 0.20)",
+        "card_bg": "rgba(255, 128, 128, 0.15)",
+        "text_button_bg": "rgba(255, 128, 128, 1)",
+        "description": "Help provide essential medical supplies and care for underprivileged children in need of urgent medical attention.",
+        "price": 50
+    }
+]
