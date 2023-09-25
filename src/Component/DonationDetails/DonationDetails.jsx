@@ -7,7 +7,7 @@ const DonationDetails = () => {
     const donationId = param.id;
     const donationsDetails = useLoaderData();
     const donationDetails = donationsDetails.find((donation) => donation.id == donationId);
-    const { card_bg, category, category_bg, description, id, img, price, text_button_bg, title } = donationDetails;
+    const { description, img, price, text_button_bg, title } = donationDetails;
 
     const handleDonate = (donation) => {
         setDonationData(donation)
