@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <section>
+        <section className='container mx-auto px-10'>
             <nav className='flex justify-between items-center'>
                 <img className=' h-16' src={logo} alt="" />
                 <ul className='flex gap-12 text-lg font-bold'>
