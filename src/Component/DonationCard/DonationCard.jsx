@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DonationCard = ({ donationCard }) => {
-    console.log(donationCard);
     const { card_bg, category, category_bg, description, id, img, price, text_button_bg, title } = donationCard;
 
 
