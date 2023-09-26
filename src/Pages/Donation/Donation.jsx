@@ -19,7 +19,6 @@ const Donation = () => {
         if (isShowAll) {
             const shorted = shortDonatedCard.slice(0, 4);
             setDonatedCard(shorted);
-            console.log(shorted);
         } else {
             setDonatedCard(shortDonatedCard);
         }
@@ -31,7 +30,7 @@ const Donation = () => {
 
     return (
         <div className='container mx-auto '>
-            <div className='p-2 md:p-4 grid lg:grid-cols-2 my-2 gap-6 container mx-auto '>
+            <div className='p-2 md:p-4 grid md:grid-cols-2 my-2 gap-6 container mx-auto '>
                 {
                     donatedCard.map(aCard => <DonatedCard key={aCard.id} aCard={aCard}></DonatedCard>)
                 }

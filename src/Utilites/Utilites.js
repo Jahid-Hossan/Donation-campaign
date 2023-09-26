@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2'
+
 const getDonationData = () => {
     const donationData = localStorage.getItem('donated-data');
     if (donationData) {
@@ -15,8 +17,19 @@ const setDonationData = (donation) => {
     if (!isDonated) {
         donationData.push(donation);
         localStorage.setItem('donated-data', JSON.stringify(donationData))
+        Swal.fire({
+            icon: 'success',
+            title: 'Ma sha allah',
+            text: "You're awesome",
+            timer: 1500
+        })
     } else {
-        alert('already')
+        Swal.fire({
+            icon: 'error',
+            title: 'Already Donated',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 }
 

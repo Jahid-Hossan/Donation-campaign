@@ -46,24 +46,26 @@ const Statistics = () => {
     };
 
     return (
-        <div className='container max-h-[100vh] mx-auto grid justify-center'>
-            <PieChart width={400} height={400}>
-                <Pie
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={renderCustomizedLabel}
-                    outerRadius={200}
-                    fill="#8884d8"
-                    dataKey="value"
-                >
-                    {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                </Pie>
-                <Tooltip />
-            </PieChart>
+        <div className='container my-6 max-h-[100vh] mx-auto grid  justify-center'>
+            <div className='mx-auto'>
+                <PieChart width={300} height={300}>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={renderCustomizedLabel}
+                        outerRadius={150}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                    <Tooltip />
+                </PieChart>
+            </div>
             <div className='md:flex gap-6 mt-5 justify-center'>
                 <div className='flex items-center gap-1'>
                     <h2>Your Donation</h2>
