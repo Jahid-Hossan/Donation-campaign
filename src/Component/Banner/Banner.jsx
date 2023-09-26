@@ -5,21 +5,31 @@ import DonationCards from "../DonationCards/DonationCards";
 const Banner = () => {
     const [allDonationsCards, setAllDonationsCards] = useState([]);
     const [forSearch, setForSearch] = useState([]);
+    const [forStore, setForStore] = useState([]);
     const [check, setCheck] = useState(true)
 
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
-            .then(data => setAllDonationsCards(data))
-        setForSearch(allDonationsCards);
+            .then(data => setForStore(data))
+        setForSearch(forStore)
+        setAllDonationsCards(forStore);
         console.log("yes", check);
+        checkData()
     }, [check]);
 
-    // console.log(allDonationsCards);
+    const checkData = () => {
+        if (forSearch.length === 0) {
+            setCheck(!check);
+
+        }
+    }
+
 
     const handleSearch = (e) => {
         e.preventDefault()
+        setForSearch(forStore)
         const inputValue = e.target.search.value;
         e.target.search.value = '';
         const searchedItem = forSearch.filter(aCard => aCard.category === inputValue.toLowerCase());
@@ -37,7 +47,8 @@ const Banner = () => {
             })
         }
     };
-    // console.log(forSearch)
+    console.log(forSearch)
+    console.log(allDonationsCards)
     return (
         <section className="container mx-auto p-3 md:p-6 lg:p-10" >
             <div className=' bg-banner text-center py-10 md:pb-32 md:pt-20 lg:pt-32 lg:pb-52'>
