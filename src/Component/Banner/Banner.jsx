@@ -4,27 +4,34 @@ import './Banner.css'
 import DonationCards from "../DonationCards/DonationCards";
 const Banner = () => {
     const [allDonationsCards, setAllDonationsCards] = useState([]);
+    const [forSearch, setForSearch] = useState([]);
 
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setAllDonationsCards(data))
+        setForSearch(allDonationsCards);
     }, []);
+
+
 
     const handleSearch = (e) => {
         e.preventDefault()
         const inputValue = e.target.search.value;
-        const searchedItem = allDonationsCards.filter(aCard => aCard.category === inputValue.toLowerCase());
+        e.target.search.value = '';
+        const searchedItem = forSearch.filter(aCard => aCard.category === inputValue.toLowerCase());
         console.log(searchedItem);
         if (searchedItem.length > 0) {
             setAllDonationsCards(searchedItem)
             console.log(allDonationsCards);
         }
         else {
-            alert('No Data Found')
+            setAllDonationsCards(forSearch);
+            alert("Invalid Keyword")
         }
     };
+
     return (
         <section className="container mx-auto p-10" >
             <div className=' bg-banner text-center pt-32 pb-52 vs '>

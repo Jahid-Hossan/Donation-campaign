@@ -3,11 +3,31 @@ import { getDonationData } from '../../Utilites/Utilites';
 import DonatedCard from '../../Component/DonatedCard/DonatedCard';
 
 const Donation = () => {
-    const [donatedCard, setDonatedCard] = useState([])
+    const [donatedCard, setDonatedCard] = useState([]);
+    const [shortDonatedCard, setShortDonatedCard] = useState([]);
+    const [isShowAll, setIsShowAll] = useState('false')
+
     useEffect(() => {
         const getDonatedData = getDonationData();
-        setDonatedCard(getDonatedData);
+        setShortDonatedCard(getDonatedData);
+
     }, [])
+
+    const areAny = shortDonatedCard.length <= 4;
+    useEffect(() => {
+
+        if (isShowAll) {
+            const shorted = shortDonatedCard.slice(0, 4);
+            setDonatedCard(shorted);
+            console.log(shorted);
+        } else {
+            setDonatedCard(shortDonatedCard);
+        }
+    }, [isShowAll, shortDonatedCard])
+
+    const handleSeeAll = (a) => {
+        setIsShowAll(false)
+    }
 
     return (
         <div className='container mx-auto '>
@@ -16,7 +36,7 @@ const Donation = () => {
                     donatedCard.map(aCard => <DonatedCard key={aCard.id} aCard={aCard}></DonatedCard>)
                 }
             </div>
-            <button className='card-actions mt-5 mx-auto text-white font-normal rounded text-lg px-4 py-2 text-right bg-green-600'>See All</button>
+            <button onClick={() => handleSeeAll(true)} className='card-actions mt-5 mx-auto text-white font-normal rounded text-lg px-4 py-2  bg-green-600' style={{ display: !isShowAll || areAny ? 'none' : '' }} >See All</button>
         </div>
 
     );

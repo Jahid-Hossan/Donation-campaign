@@ -12,18 +12,17 @@ const Statistics = () => {
         setTotalDonation(getDonatedData);
     }, []);
 
-    // Calculate the percentage of donated items
     const donatedPercentage = totalDonation.length / totalData.length * 100;
 
     const data = [
         {
             name: 'Total',
-            value: totalData.length - totalDonation.length, // Adjust the "Total" value
+            value: totalData.length - totalDonation.length,
             color: "red"
         },
         {
             name: 'Donated',
-            value: totalDonation.length, // Set "Donated" to 100%
+            value: totalDonation.length,
             color: "green"
         }
     ];
@@ -31,8 +30,9 @@ const Statistics = () => {
     const COLORS = ["#FF0000", "#008000"];
 
     const RADIAN = Math.PI / 180;
+    console.log(RADIAN);
     const renderCustomizedLabel = ({
-        cx, cy, midAngle, innerRadius, outerRadius, percent, index,
+        cx, cy, midAngle, innerRadius, outerRadius, percent,
     }) => {
         const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
         const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -74,8 +74,13 @@ const Statistics = () => {
                     <div className='rounded mt-1 w-20 h-3 bg-red-600'></div>
                 </div>
             </div>
+
+
+
         </div>
     );
+
+
 };
 
 export default Statistics;
