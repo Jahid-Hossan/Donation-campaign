@@ -25,7 +25,7 @@ const DonationDetails = () => {
             </div>
 
             <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl">{title}</h1>
-            <p className="font-normal text-base text-gray-500 ">{description}</p>
+            <p className="font-normal text-base mb-4 md:mb-8 lg:mb-10 text-gray-500 ">{description}</p>
         </div >
     );
 };
