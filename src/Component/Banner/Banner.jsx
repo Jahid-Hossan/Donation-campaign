@@ -2,43 +2,25 @@ import { useEffect, useState } from "react";
 import Swal from 'sweetalert2'
 import './Banner.css'
 import DonationCards from "../DonationCards/DonationCards";
+import { useLoaderData } from "react-router-dom";
 const Banner = () => {
     const [allDonationsCards, setAllDonationsCards] = useState([]);
-    const [forSearch, setForSearch] = useState([]);
-    const [forStore, setForStore] = useState([]);
-    const [check, setCheck] = useState(true)
 
-
+    const allData = useLoaderData()
     useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setForStore(data))
-        setForSearch(forStore)
-        setAllDonationsCards(forStore);
-        console.log("yes", check);
-        checkData()
-    }, [check]);
-
-    const checkData = () => {
-        if (forSearch.length === 0) {
-            setCheck(!check);
-
-        }
-    }
-
+        setAllDonationsCards(allData)
+    }, [])
 
     const handleSearch = (e) => {
         e.preventDefault()
-        setForSearch(forStore)
         const inputValue = e.target.search.value;
         e.target.search.value = '';
-        const searchedItem = forSearch.filter(aCard => aCard.category === inputValue.toLowerCase());
-        // console.log(searchedItem);
+        const searchedItem = allData.filter(aCard => aCard.category === inputValue.toLowerCase());
         if (searchedItem.length > 0) {
             setAllDonationsCards(searchedItem)
         }
         else {
-            setCheck(!check);
+            setAllDonationsCards(allData)
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -47,7 +29,6 @@ const Banner = () => {
             })
         }
     };
-    console.log(forSearch)
     console.log(allDonationsCards)
     return (
         <section className="container mx-auto p-3 md:p-6 lg:p-10" >

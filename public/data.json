@@ -49,8 +49,8 @@
         "title": "Children's Clothing Drive",
         "category": "clothing",
         "category_bg": "rgba(255, 0, 0, 0.18)",
-        "card_bg": "rgba(255, 0, 0, 0.15)",
-        "text_button_bg": "rgba(255, 0, 0, 1)",
+        "card_bg": "rgba(255, 165, 0, 0.15)",
+        "text_button_bg": "rgba(255, 165, 0, 1)",
         "description": "Provide clothing for disadvantaged children and ensure they have the attire they need. Your contribution helps improve the lives of young ones in need.",
         "price": 14
     },

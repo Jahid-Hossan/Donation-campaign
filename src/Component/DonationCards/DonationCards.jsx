@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import DonationCard from './../DonationCard/DonationCard';
 
 const DonationCards = ({ allDonationsCards }) => {
