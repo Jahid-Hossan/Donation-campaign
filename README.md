@@ -1,8 +1,11 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features of my project
 
-Currently, two official plugins are available:
+1. Custom Search Option
+This website is very handy and user-friendly. We built this website with multiple functionalities. One of the best feature is user can search with the category name in which category he/she is interested to donate. The user doesn't need to scroll to find their interested category. and we added different background colors to each category so the user can recognize which category he or she is donating to.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Statistic Chart
+One of the best features is the statistic chart, which is my personal favorite. Users can track their donation data statistically to see how many percent they donated from the total donation data. It encourages users to donate more. and users don't need to update manually. It will update automatically once they donate in any category.
+
+3. Responsive Design
+Another feature is responsive design, which is very necessary in day-to-day life. Every user doesn't have a computer. In that case, our website will help them browse on mobile and tablet devices. We have a very clean UI. Users will be satisfied with our website.

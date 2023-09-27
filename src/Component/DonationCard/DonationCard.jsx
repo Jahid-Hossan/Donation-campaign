@@ -9,7 +9,7 @@ const DonationCard = ({ donationCard }) => {
     return (
         <Link to={`/${id}`}>
             <div className='rounded-lg cursor-pointer ' style={{ backgroundColor: card_bg }} >
-                <img className='w-full' src={img} alt="" />
+                <img className='w-full rounded-lg ' src={img} alt="" />
                 <div className='p-4'>
                     <h4 className='px-4 py-1 w-fit my-2 text-sm font-medium rounded-md' style={{ color: text_button_bg, backgroundColor: category_bg }}>{category}</h4>
                     <h2 className='text-xl font-semibold' style={{ color: text_button_bg }}>{title}</h2>

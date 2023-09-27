@@ -19,8 +19,8 @@ const setDonationData = (donation) => {
         localStorage.setItem('donated-data', JSON.stringify(donationData))
         Swal.fire({
             icon: 'success',
-            title: 'Ma sha allah',
-            text: "You're awesome",
+            title: 'WOW',
+            text: "You Are Awesome",
             timer: 1500
         })
     } else {

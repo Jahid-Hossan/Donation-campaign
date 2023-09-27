@@ -5,7 +5,7 @@ const DonatedCard = ({ aCard }) => {
 
     return (
         <div className='lg:flex rounded-lg' style={{ backgroundColor: card_bg, }}>
-            <img className='rounded-lg w-full ' src={img} alt="" />
+            <img className='rounded-lg w-full lg:max-w-xs ' src={img} alt="" />
             <div className='p-6'>
                 <p className='font-normal text-sm px-2.5 py-1 rounded inline-block  ' style={{ backgroundColor: category_bg, color: text_button_bg }}>{category}</p>
                 <h2 className='font-semibold text-2xl my-2'>{title}</h2>
